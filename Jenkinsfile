@@ -24,7 +24,7 @@ parallel (
         	}
         	
         	def sap_pipeline = load "sap-pipeline/sap.groovy"
-        	sap_pipeline.abap_unit(LABEL,HOST,CREDENTIAL,PACKAGE,COVERAGE)
+        //	sap_pipeline.abap_unit(LABEL,HOST,CREDENTIAL,PACKAGE,COVERAGE)
         	sap_pipeline.abap_sci(LABEL,HOST,CREDENTIAL,PACKAGE,VARIANT)
         	sap_pipeline.sap_api_test(LABEL,HOST,CREDENTIAL)
         }
