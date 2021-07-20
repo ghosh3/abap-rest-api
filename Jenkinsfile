@@ -8,11 +8,11 @@ def COVERAGE = 80
 def VARIANT = "DEFAULT"
 
 parallel (
-    "CI1":{
+    "SAP":{
         node {
-        	def LABEL = "CI1"
+        	def LABEL = "SAP"
         	def HOST = "mgm058095.saplabs.com"
-        	def CREDENTIAL = "CI1"
+        	def CREDENTIAL = "SAP"
         	
         	git poll: true, branch: BRANCH, url: GITURL
         		
