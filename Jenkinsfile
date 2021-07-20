@@ -8,11 +8,11 @@ def COVERAGE = 80
 def VARIANT = "DEFAULT"
 
 parallel (
-    "NPL":{
+    "CI1":{
         node {
-        	def LABEL = "NPL"
-        	def HOST = "vhcalnplci.dummy.nodomain"
-        	def CREDENTIAL = "NPL"
+        	def LABEL = "CI1"
+        	def HOST = "mgm058095.saplabs.com"
+        	def CREDENTIAL = "CI1"
         	
         	git poll: true, branch: BRANCH, url: GITURL
         		
